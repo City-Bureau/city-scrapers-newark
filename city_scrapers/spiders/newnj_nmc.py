@@ -6,7 +6,7 @@ from city_scrapers_core.spiders import LegistarSpider
 class NewnjSpider(LegistarSpider):
     name = "newnj_nmc"
     agency = "Newark Municipal Council"
-    timezone = "America/Chicago"
+    timezone = "America/New_York"
     start_urls = ["https://newark.legistar.com/Calendar.aspx"]
     location = {
         "address": "City Hall, 920 Broad Street, Newark, NJ 07102",

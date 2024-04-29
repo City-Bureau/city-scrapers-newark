@@ -8,7 +8,7 @@ class NewnjSpider(LegistarSpider):
     agency = "Newark Municipal Council"
     timezone = "America/New_York"
     start_urls = ["https://newark.legistar.com/Calendar.aspx"]
-    location = {
+    default_location = {
         "address": "City Hall, 920 Broad Street, Newark, NJ 07102",
         "name": "Municipal Council Chamber",
     }
@@ -29,10 +29,22 @@ class NewnjSpider(LegistarSpider):
                 end=None,
                 all_day=False,
                 time_notes="",
-                location=self.location,
+                location=self.parse_location(event),
                 links=self.legistar_links(event),
                 source=self.legistar_source(event),
             )
             meeting["status"] = self._get_status(meeting)
             meeting["id"] = self._get_id(meeting)
             yield meeting
+
+    def parse_location(self, event):
+        """
+        Parse or generate location.
+        """
+        location = event["Meeting Location"]
+        if "Council Chamber" in location:
+            return self.default_location
+        return {
+            "address": location,
+            "name": "",
+        }

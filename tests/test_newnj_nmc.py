@@ -66,7 +66,7 @@ def test_location():
 def test_source():
     assert (
         parsed_items[0]["source"]
-        == "https://newark.legistar.com/DepartmentDetail.aspx?ID=689&GUID=B3DBDA39-751C-4DD8-B443-ACC982CBFF09"  # noqa
+        == "https://newark.legistar.com/MeetingDetail.aspx?ID=1189588&GUID=C695B36D-A796-47DD-8140-118B4FFBA77F&Options=info|&Search="  # noqa
     )
 
 

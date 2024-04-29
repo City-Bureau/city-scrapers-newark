@@ -31,7 +31,7 @@ class NewnjSpider(LegistarSpider):
                 time_notes="",
                 location=self.parse_location(event),
                 links=self.legistar_links(event),
-                source=self.legistar_source(event),
+                source=event["Meeting Details"]["url"],
             )
             meeting["status"] = self._get_status(meeting)
             meeting["id"] = self._get_id(meeting)

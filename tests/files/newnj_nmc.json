@@ -1,0 +1,29 @@
+[
+  {
+    "Name": {
+      "label": "Municipal Council",
+      "url": "https://newark.legistar.com/DepartmentDetail.aspx?ID=689&GUID=B3DBDA39-751C-4DD8-B443-ACC982CBFF09"
+    },
+    "Meeting Date": "4/10/2024",
+    "iCalendar": {
+      "url": "https://newark.legistar.com/View.ashx?M=IC&ID=1189588&GUID=C695B36D-A796-47DD-8140-118B4FFBA77F"
+    },
+    "Meeting Time": "12:30 PM",
+    "Meeting Location": "Council Chamber",
+    "Meeting Details": {
+      "label": "Meeting\u00a0details",
+      "url": "https://newark.legistar.com/MeetingDetail.aspx?ID=1189588&GUID=C695B36D-A796-47DD-8140-118B4FFBA77F&Options=info|&Search="
+    },
+    "Agenda": {
+      "label": "Agenda",
+      "url": "https://newark.legistar.com/View.ashx?M=A&ID=1189588&GUID=C695B36D-A796-47DD-8140-118B4FFBA77F"
+    },
+    "Accessible Agenda": {
+      "label": "Accessible Agenda",
+      "url": "https://newark.legistar.com/View.ashx?M=AADA&ID=1189588&GUID=C695B36D-A796-47DD-8140-118B4FFBA77F"
+    },
+    "Minutes": "Not\u00a0available",
+    "Accessible Minutes": "Not\u00a0available",
+    "Video": "Not\u00a0available"
+  }
+]
